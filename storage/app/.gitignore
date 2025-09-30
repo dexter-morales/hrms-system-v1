@@ -1,0 +1,6 @@
+*
+!/public/samples/
+!/public/samples/**
+!private/
+!public/
+!.gitignore

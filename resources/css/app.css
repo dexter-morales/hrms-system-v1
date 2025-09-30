@@ -1,0 +1,247 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+/* @import "flowbite"; */
+/* :root {
+    font-family: CircularStd, sans-serif;
+} */
+
+@font-face {
+    font-family: Circular Std;
+    src: url("../font/circular-std-medium-500.ttf");
+}
+[type="text"]:focus {
+    outline: none;
+    --tw-ring-color: none !important;
+}
+@theme {
+    --font-circular: CircularStd, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: CircularStd, sans-serif !important;
+}
+
+.breadcrumb {
+    font-family: CircularStd, sans-serif !important;
+}
+
+input,
+textarea {
+    font-family: CircularStd, sans-serif !important;
+}
+
+button {
+    font-family: CircularStd, sans-serif !important;
+}
+
+li {
+    font-family: CircularStd, sans-serif !important;
+}
+
+span {
+    font-family: CircularStd, sans-serif !important;
+}
+
+a {
+    font-family: CircularStd, sans-serif !important;
+}
+
+* {
+    font-family: CircularStd, sans-serif !important;
+}
+
+@import "tailwindcss";
+@import "flowbite";
+
+.sideBarAdmin > div {
+    /* margin-top: 1000px; */
+    /* background-color: slategray; */
+    background-color: rgb(52, 68, 76);
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 0px;
+    /* position: fixed;
+    z-index: 1001;
+    border-right: 1px solid transparent;
+    transition: 0.2s ease-in-out; */
+}
+
+.sidebarItemHeaderActive {
+    background-color: rgb(52, 68, 76);
+}
+
+.sidebarItemHeaderActive {
+    content: '<span className="absolute inline-flex w-full h-full bg-red-700 rounded-full opacity-75 animate-ping"></span>';
+}
+
+.sidebarItemHeaderActive > svg {
+    color: #cad5e2 !important;
+}
+
+.sidebarItemHeaderActive:hover > svg {
+    color: rgb(52, 68, 76) !important;
+}
+
+/* .sidebarItemGroup > a > li > a > svg {
+    color: #cad5e2;
+} */
+
+.sidebarItem > svg {
+    color: #cad5e2;
+}
+
+.sidebarItemActive > svg {
+    color: #314158;
+}
+
+.sidebarItem:hover > svg {
+    color: #314158;
+}
+
+.sidebarCollapse > svg {
+    color: #cad5e2;
+}
+
+.mobileSidebarAdmin > div {
+    background-color: rgb(52, 68, 76) !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 0px;
+}
+
+/* .sidebarCollapse.sidebarCollapseActive > svg {
+    color: #1d293d;
+} */
+
+.sidebarCollapse.sidebarCollapseActive > svg {
+    color: white;
+}
+
+.punch-hours {
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    font-size: 18px;
+    height: 120px;
+    justify-content: center;
+    width: 120px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(227, 227, 227);
+    border-image: initial;
+    border-radius: 50%;
+    margin: 0px auto;
+}
+
+.punch-det {
+    background-color: rgb(249, 249, 249);
+    margin-bottom: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(227, 227, 227);
+    border-image: initial;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+.punch-det h6 {
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+
+.punch-det p {
+    color: rgb(114, 114, 114);
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.stats-box {
+    background-color: rgb(249, 249, 249);
+    margin-bottom: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(227, 227, 227);
+    border-image: initial;
+    padding: 5px;
+}
+
+.stats-box p {
+    font-size: 12px;
+    margin: 0px;
+}
+
+.stats-box > h6 {
+    margin-bottom: 0px;
+}
+
+.recent-activity .res-activity-list {
+    height: 328px;
+    list-style-type: none;
+    margin-bottom: 0px;
+    overflow-y: auto;
+    padding-left: 30px;
+    position: relative;
+}
+
+.recent-activity .res-activity-list li {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.recent-activity .res-activity-list li::before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+}
+
+.recent-activity .res-activity-list li::before {
+    width: 10px;
+    height: 10px;
+    left: -30px;
+    top: 0px;
+    margin-right: 15px;
+    z-index: 2;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(244, 59, 72);
+    border-image: initial;
+    background: rgb(255, 255, 255);
+}
+
+.recent-activity p {
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+.recent-activity .res-activity-time {
+    color: rgb(187, 187, 187);
+    font-size: 12px;
+}
+
+.leaveCredits p {
+    color: rgb(187, 187, 187);
+    font-size: 12px;
+}
+
+.recent-activity p {
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+
+.recent-activity .res-activity-list::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 229, 229);
+    border-image: initial;
+}
